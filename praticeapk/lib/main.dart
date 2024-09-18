@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
      
-      home: const MyHomePage(),
+      home: const MyHomePage(g),
     );
   }
 }
