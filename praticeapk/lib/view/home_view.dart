@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'John Brown',
+                        'John Brownn',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 24,
