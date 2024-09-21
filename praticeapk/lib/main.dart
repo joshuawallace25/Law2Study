@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:praticeapk/views/home_view.dart';
+//import 'package:praticeapk/views/home_view.dart';
 import 'package:praticeapk/views/splashscreen.dart';
 
 void main() {

@@ -7,10 +7,8 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(color: Colors.red,
-  
           child: Center(
             child: Column(
-              
               mainAxisAlignment: MainAxisAlignment.center,
              // crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -23,8 +21,7 @@ class SplashScreen extends StatelessWidget {
               ],
             ),
           ),
-        
-      )
+            )
     );
   }
 }
