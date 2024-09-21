@@ -15,13 +15,11 @@ class SecondPage extends StatelessWidget {
             style: TextStyle(
               color: Colors.white),),
             Image.asset("assets/moon.jpeg"),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             ElevatedButton(
               onPressed: (){
-                Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const HomePage()));
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => const HomePage()));
               }, 
               child: const Text("travel Now")),
               const Text('Click here to go to the Moon')
