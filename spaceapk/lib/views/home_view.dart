@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(top: 50.0),
               child: Text(
-                'You are on Earth',
+                'You are on Earths',
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 14.0,
