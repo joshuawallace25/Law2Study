@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     
-    return const MaterialApp(home: HomePage());
+    return const MaterialApp(home: HomePages());
   }
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class HomePages extends StatelessWidget {
+  const HomePages({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SecondPage()));
+                              builder: (context) => const SecondPages()));
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blueAccent),
@@ -91,8 +91,8 @@ class HomePage extends StatelessWidget {
 }
 
 //second page
-class SecondPage extends StatelessWidget {
-  const SecondPage({super.key});
+class SecondPages extends StatelessWidget {
+  const SecondPages({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -146,7 +146,7 @@ class SecondPage extends StatelessWidget {
                     ),
                      onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => const HomePage()));
+                          MaterialPageRoute(builder: (context) => const HomePages()));
                     },
                   )
                 ],
