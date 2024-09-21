@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:praticeapk/views/home_view.dart';
+import 'package:praticeapk/views/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Week 1',
-      home: const HomePage(),
+      home: const SplashScreen(),
     );
   }
 }
