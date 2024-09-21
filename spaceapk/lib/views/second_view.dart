@@ -62,7 +62,7 @@ class SecondPage extends StatelessWidget {
                 ],
               ),
             ),
-            const Text('Click here to go to the Moon')
+       //     const Text('Click here to go to the Moon')
           ],
         ),
       ),
