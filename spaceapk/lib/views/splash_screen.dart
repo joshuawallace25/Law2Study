@@ -42,7 +42,8 @@ class SplashScreen extends StatelessWidget {
                 builder: (context) => const HomePage()));
               }, 
               //TODO: Uncomment for debugging
-         //     child: const Text('Next Page')),
+              child: const Text('Next Page')),
+              //ToDo Completed
             ],
           ),
         ),
