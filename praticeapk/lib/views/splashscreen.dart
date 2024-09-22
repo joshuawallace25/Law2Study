@@ -12,11 +12,11 @@ class SplashScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
              // crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text("Space Application"),
-                SizedBox(height: 20,),
+                const Text("Space Application"),
+                const SizedBox(height: 20,),
                 ElevatedButton(
                   onPressed: (){}, 
-                child: Text("Continue")
+                child: const Text("Continue")
                 )
               ],
             ),

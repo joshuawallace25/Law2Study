@@ -20,6 +20,7 @@ class SplashScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold
                 ),),
                 const SizedBox(height: 50.0,),
+                //Home page Navigation Button
               ElevatedButton(onPressed: (){
                 Navigator.push( context,
                 MaterialPageRoute(
