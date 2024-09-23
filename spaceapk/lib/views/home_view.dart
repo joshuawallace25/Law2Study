@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:spaceapk/views/second_view.dart';
 
 class HomePage extends StatelessWidget {
@@ -45,10 +46,11 @@ class HomePage extends StatelessWidget {
                   ),
                   ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
+                        Get.to(const SecondPage());
+                        /* Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const SecondPage()));
+                                builder: (context) => const SecondPage())); */
                       },
                       child: const Text(
                         'Go to the moon',
