@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spaceapk/views/home_view.dart';
+import 'package:get/get.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({super.key});
@@ -38,7 +38,7 @@ class SecondPage extends StatelessWidget {
                 children: [
                   const Text(
                     'Click here to go to the Moon',
-                    style: const TextStyle(
+                    style: TextStyle(
                         color: Colors.white,
                         fontSize: 12.0,
                         fontWeight: FontWeight.bold),
@@ -48,10 +48,11 @@ class SecondPage extends StatelessWidget {
                   ),
                   ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
+                        Get.back();
+                        /* Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HomePage()));
+                                builder: (context) => const HomePage())); */
                       },
                       child: const Text(
                         "travel Now",
@@ -62,7 +63,7 @@ class SecondPage extends StatelessWidget {
                 ],
               ),
             ),
-       //     const Text('Click here to go to the Moon')
+            //     const Text('Click here to go to the Moon')
           ],
         ),
       ),
