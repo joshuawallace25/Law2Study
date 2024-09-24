@@ -11,15 +11,14 @@ Day 6-7: Build a small project using what you've learned.(eg.Splash screen)
 #Goal: Master the basics of GetX state management.
 
 Day 1-2: Understand what GetX is and why it's useful, install GetX package, learn basic state management (GetBuilder, Obx).
-Day 3-4: Implement GetX in your existing project (from Week 1) for state management (e.g., managing to-do list items).
-Day 5-6: Practice more with GetX by adding a counter or login screen with form validation.
+Day 3-4: Explore GetX routing, practice navigation using Get.to, Get.back, and Get.off.
+Day 5-6: Create a multi-screen app (e.g., a navigation drawer with a home, settings, and about page), implement GetX navigation.
 Day 7: Refactor your code to fully use GetX for state management, discuss key takeaways.
 
 #Week 3: GetX Routing and Dependency Injection
 #Goal: Learn how to manage app navigation and dependencies using GetX.
-
-Day 1-2: Explore GetX routing, practice navigation using Get.to, Get.back, and Get.off.
-Day 3-4: Create a multi-screen app (e.g., a navigation drawer with a home, settings, and about page), implement GetX navigation.
+Day 1-2: Implement GetX in your existing project (from Week 1) for state management (e.g., managing to-do list items).
+Day 3-4: Practice more with GetX by adding a counter or login screen with form validation.
 Day 5-6: Learn GetX Dependency Injection (Get.put, Get.lazyPut, Get.find), apply it in your project for controller management.
 Day 7: Refactor your project by injecting dependencies using GetX, review navigation flow.
 
