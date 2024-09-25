@@ -14,9 +14,9 @@ class SplashScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-                 Text(
+                 const Text(
                   'G E T  X  A P P',
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontSize: 25.0,
                       fontWeight: FontWeight.bold),
