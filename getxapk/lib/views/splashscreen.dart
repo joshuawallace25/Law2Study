@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getxapk/views/home_view.dart';
+import 'package:getxapk/app/route.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -33,7 +33,7 @@ class SplashScreen extends StatelessWidget {
               ),
               ElevatedButton(
                   onPressed: () {
-                    Get.offAll(const HomeView());
+                    Get.offAll(Routes.homeView);
                   },
                   child: const Text(
                     'View the World',
