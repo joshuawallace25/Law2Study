@@ -14,13 +14,13 @@ class SplashScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-                 const Text(
-                  'G E T  X  A P P',
-                  style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 25.0,
-                      fontWeight: FontWeight.bold),
-                ),
+              const Text(
+                'G E T  X  A P P',
+                style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 25.0,
+                    fontWeight: FontWeight.bold),
+              ),
               const Text(
                 'Welcome to the world of Get X',
                 style: const TextStyle(
@@ -33,7 +33,7 @@ class SplashScreen extends StatelessWidget {
               ),
               ElevatedButton(
                   onPressed: () {
-                    Get.to(const HomeView());
+                    Get.offAll(const HomeView());
                   },
                   child: const Text(
                     'View the World',
