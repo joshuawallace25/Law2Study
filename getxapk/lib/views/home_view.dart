@@ -9,7 +9,6 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-<<<<<<< HEAD
         title: const Text("Hello"),
       ),
       drawer: Drawer(
@@ -20,7 +19,6 @@ class HomeView extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Color.fromARGB(255, 0, 34, 61),
               ),
-=======
         backgroundColor: Colors.grey[200],
         title: Center(
           child: Text('Chat Room',
@@ -38,7 +36,6 @@ class HomeView extends StatelessWidget {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.only(top: 50.0),
->>>>>>> eef8630f22790c9eedb8b52731fe1ca5ea3bf619
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center, // Centers content in the header
                 children: [
