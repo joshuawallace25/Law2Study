@@ -39,7 +39,6 @@ class HomeView extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center, // Centers content in the header
                 children: [
-<<<<<<< HEAD
                   CircleAvatar(
                     radius: 40, // Reduced radius to fit better in the header
                     backgroundImage: AssetImage('assets/profile.jpg'),
@@ -93,42 +92,6 @@ class HomeView extends StatelessWidget {
             ),
           ],
         ),
-=======
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        Circle(),
-                        SizedBox(width: 15,),
-                        Circle(),
-                        SizedBox(width: 15,),
-                        Circle(),
-                        SizedBox(width: 15,),
-                        Circle(),
-                        SizedBox(width: 15,),
-                        Circle(),
-                        SizedBox(width: 15,),
-                        Circle(),
-                        SizedBox(width: 15,),
-                        Circle(),
-                        SizedBox(width: 15,),
-                        Circle(),
-                        SizedBox(width: 15,),
-                        Circle(),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 40,),
-                  Rectangle(),
-                  SizedBox(height: 5,),
-                  Rectangle(),
-                  SizedBox(height: 5,),
-                  Rectangle(),
-                ],
-              ),
-            ),
-          ),
->>>>>>> eef8630f22790c9eedb8b52731fe1ca5ea3bf619
       ),
     );
   }
