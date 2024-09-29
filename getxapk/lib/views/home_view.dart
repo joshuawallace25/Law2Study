@@ -1,61 +1,67 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:getxapk/app/route.dart';
+import 'package:getxapk/chat/circle.dart';
+import 'package:getxapk/chat/rectangle.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(
-              color:  Color.fromARGB(255, 0, 34, 61)),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.grey[200],
+        title: Center(
+          child: Text('Chat Room',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+        ),
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.arrow_back_ios),
+          color: Colors.black,
+          iconSize: 20,
+        ),
+      ),
+      body: Container(
+        color: Colors.grey[200],
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 50.0),
               child: Column(
                 children: [
-                  CircleAvatar(
-                    radius: 50,
-                    backgroundColor: Colors.grey,
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Circle(),
+                        SizedBox(width: 15,),
+                        Circle(),
+                        SizedBox(width: 15,),
+                        Circle(),
+                        SizedBox(width: 15,),
+                        Circle(),
+                        SizedBox(width: 15,),
+                        Circle(),
+                        SizedBox(width: 15,),
+                        Circle(),
+                        SizedBox(width: 15,),
+                        Circle(),
+                        SizedBox(width: 15,),
+                        Circle(),
+                        SizedBox(width: 15,),
+                        Circle(),
+                      ],
+                    ),
                   ),
-                  SizedBox(height: 10,),
-                  Text('Lawrence P. Maurice'),
+                  SizedBox(height: 40,),
+                  Rectangle(),
+                  SizedBox(height: 5,),
+                  Rectangle(),
+                  SizedBox(height: 5,),
+                  Rectangle(),
                 ],
-              )
               ),
-              ListTile(
-                leading: Icon(Icons.account_box),
-                title: Text('Home'),
-                onTap: () {
-                  Get.toNamed(Routes.homeView);
-                } ,
-              ),
-               ListTile(
-                leading: Icon(Icons.),
-                title: Text('About'),
-                onTap: () {
-                  Get.toNamed(Routes.about);
-                },
-              ),
-               ListTile(
-                leading: Icon(Icons.settings),
-                title: Text('Setting'),
-                onTap: () {
-                  Get.toNamed(Routes.settings);
-                },
-              ),
-          ],
-        )
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-              Text('Home Page'),
-          ],
-        ),
+            ),
+          ),
       ),
     );
   }

@@ -33,7 +33,7 @@ class SplashScreen extends StatelessWidget {
               ),
               ElevatedButton(
                   onPressed: () {
-                    Get.offAll(Routes.homeView);
+                    Get.toNamed(Routes.homeView);
                   },
                   child: const Text(
                     'View the World',
