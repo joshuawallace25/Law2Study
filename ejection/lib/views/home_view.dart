@@ -1,3 +1,5 @@
+import 'package:ejection/controller/tapController.dart';
+import 'package:ejection/views/first_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -6,6 +8,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Tapcontroller controller = Get.put(Tapcontroller());
     return Scaffold(
       body: Container(
         width: double.maxFinite,
@@ -24,15 +27,17 @@ class HomePage extends StatelessWidget {
                 color: Colors.blue,
               ),
               child: const Center(
-                child: const Text(
-                  "Hot Coded Data",
+                child:  Text(
+                 '',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
             ),
 
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                controller.increment();
+              },
               child: Container(
                 margin: const EdgeInsets.all(20),
                 width: double.infinity,
@@ -48,7 +53,7 @@ class HomePage extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-           Get.to(FirstPage())
+                Get.to(FirstPage());
               },
               child: Container(
                 margin: const EdgeInsets.all(20),
