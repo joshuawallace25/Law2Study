@@ -18,20 +18,22 @@ class HomePage extends StatelessWidget {
           children: [
             // Use Obx to automatically react to changes in the x value
 
-            Container(
-              margin: const EdgeInsets.all(20),
-              width: double.infinity,
-              height: 100,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.blue,
-              ),
-              child: const Center(
-                child:  Text(
-                 '',
-                  style: TextStyle(color: Colors.white),
+           Obx(() {
+              return Container(
+                margin: const EdgeInsets.all(20),
+                width: double.infinity,
+                height: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.blue,
                 ),
-              ),
+                child: Center(
+                  child: Text(
+                    controller.x.toString(),
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              );
             ),
 
             GestureDetector(
