@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   const Text(
                     'Click here to go to the Moon',
-                    style: const TextStyle(color: Colors.white, fontSize: 12.0),
+                    style: TextStyle(color: Colors.white, fontSize: 12.0),
                   ),
                   const SizedBox(
                     width: 10.0,

@@ -16,14 +16,14 @@ class SplashScreen extends StatelessWidget {
             children: [
               const Text(
                 'G E T  X  A P P',
-                style: const TextStyle(
+                style: TextStyle(
                     color: Colors.white,
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold),
               ),
               const Text(
                 'Welcome to the world of Get X',
-                style: const TextStyle(
+                style: TextStyle(
                     fontStyle: FontStyle.italic,
                     color: Colors.white,
                     fontSize: 12.0),

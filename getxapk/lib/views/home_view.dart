@@ -12,11 +12,11 @@ class HomeView extends StatelessWidget {
         backgroundColor: Colors.grey[200],
         leading: IconButton(
           onPressed: (){},
-           icon: Icon(Icons.arrow_back_ios,
+           icon: const Icon(Icons.arrow_back_ios,
            color: Colors.black,
            size: 24,)),
-        title: Padding(
-          padding: const EdgeInsets.only(left: 50.0),
+        title: const Padding(
+          padding: EdgeInsets.only(left: 50.0),
           child:  Text("Chat Room",
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -29,12 +29,12 @@ class HomeView extends StatelessWidget {
         child: Center(
           child: ListView(
             children: [
-                Padding(padding: EdgeInsets.all(8),
-                child: Container(
+                Padding(padding: const EdgeInsets.all(8),
+                child: SizedBox(
                   height: 200,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
-                    children: [
+                    children: const [
                       Padding(padding: EdgeInsets.all(5),
                       child: Circle(),
                       ),
@@ -63,8 +63,8 @@ class HomeView extends StatelessWidget {
                   ),
                 )
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Column(
                     children: [
                       Rectangle(),

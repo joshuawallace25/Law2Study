@@ -5,6 +5,6 @@ import 'package:getxapk/views/home_view.dart';
 class HomeControllerBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => HomeView());
+    Get.lazyPut(() => const HomeView());
   }
 }

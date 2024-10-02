@@ -15,8 +15,8 @@ class HomePage extends StatelessWidget {
         child: ListView(
           children: [
             const DrawerHeader(
-              child: Text("John Brown"),
               decoration: BoxDecoration(color: Colors.blue),
+              child: Text("John Brown"),
             ),
             ListTile(
               leading: const Icon(Icons.home),
@@ -51,9 +51,9 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 20),
-            child: const Text(
+          const Padding(
+            padding: EdgeInsets.only(top: 20),
+            child: Text(
               'data',
               style: TextStyle(color: Colors.blue),
             ),
@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
           ),
           const Text(
             'data',
-            style: const TextStyle(color: Colors.blue),
+            style: TextStyle(color: Colors.blue),
           ),
           const SizedBox(
             height: 10,
@@ -93,7 +93,7 @@ class HomePage extends StatelessWidget {
               color: Colors.blue,
               width: 100,
               height: 50,
-              child: Center(child: Text('login')),
+              child: const Center(child: Text('login')),
             ),
           )
         ],

@@ -6,18 +6,17 @@ class Rectangle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 90,
-        width: 300,
+      
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
           color: Colors.white,
         ),
-        child: Column(
+        child: const Column(
           children: [   
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 10.0, left: 10),
+                  padding: EdgeInsets.only(top: 10.0, left: 10),
                   child: CircleAvatar(
                     radius: 20,
                     backgroundImage: NetworkImage(
@@ -34,7 +33,7 @@ class Rectangle extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 20),
+              padding: EdgeInsets.only(left: 20),
               child: Text(
                 'Lorem ispum is simply dummy test of\n'
                 'the printing and typesetting industry.',
