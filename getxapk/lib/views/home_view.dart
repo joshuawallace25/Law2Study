@@ -27,53 +27,63 @@ class HomeView extends StatelessWidget {
       body: Container(
         color: Colors.grey[200],
         child: Center(
-            child: SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 50.0),
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20.0),
-                      child: Row(
-                        children: [
-                          Circle(),
-                          SizedBox(width: 15,),
-                          Circle(),
-                          SizedBox(width: 15,),
-                          Circle(),
-                          SizedBox(width: 15,),
-                          Circle(),
-                          SizedBox(width: 15,),
-                          Circle(),
-                          SizedBox(width: 15,),
-                          Circle(),
-                          SizedBox(width: 15,),
-                          Circle(),
-                          SizedBox(width: 15,),
-                          Circle(),
-                          SizedBox(width: 15,),
-                          Circle(),
-                        ],
+          child: ListView(
+            children: [
+                Padding(padding: EdgeInsets.all(8),
+                child: Container(
+                  height: 200,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Padding(padding: EdgeInsets.all(5),
+                      child: Circle(),
                       ),
-                    ),
-                    SizedBox(height: 40,),
-                    Rectangle(),
-                    SizedBox(height: 6,),
-                    Rectangle(),
-                    SizedBox(height: 6,),
-                    Rectangle(),
-                    SizedBox(height: 6,),
-                    Rectangle(),
-                    SizedBox(height: 6,),
-                    Rectangle(),
-                    SizedBox(height: 6,),
-                    Rectangle(),
-                  ],
+                      Padding(padding: EdgeInsets.all(5),
+                      child: Circle(),
+                      ),
+                      Padding(padding: EdgeInsets.all(5),
+                      child: Circle(),
+                      ),
+                      Padding(padding: EdgeInsets.all(5),
+                      child: Circle(),
+                      ),
+                      Padding(padding: EdgeInsets.all(5),
+                      child: Circle(),
+                      ),
+                      Padding(padding: EdgeInsets.all(5),
+                      child: Circle(),
+                      ),
+                      Padding(padding: EdgeInsets.all(5),
+                      child: Circle(),
+                      ),
+                      Padding(padding: EdgeInsets.all(5),
+                      child: Circle(),
+                      ),
+                    ],
+                  ),
+                )
                 ),
-              ),
-            ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Rectangle(),
+                      SizedBox(height: 6,),
+                  Rectangle(),
+                   SizedBox(height: 6,),
+                  Rectangle(),
+                   SizedBox(height: 6,),
+                  Rectangle(),
+                   SizedBox(height: 6,),
+                  Rectangle(),
+                    ],
+                  ),
+                )
+                
+            ],
           ),
-      ),
+        ),
+      )
     );
   }
 }
